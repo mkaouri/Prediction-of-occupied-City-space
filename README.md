@@ -85,11 +85,11 @@ So, I converted the above virtual map of fully occupied city spaces into black a
 ![Alt text](/images/prediction_features.jpg?raw=true "Converted virtual city map of Al-Khiyam of fully occupied spaces")
 Figure 13. Shows the converted virtual city of Al-Khiyam of fully occupied spaces into black and white.
 
-## Predicting the big problem
+## Predicting the year of the biggest problem
 
-As mentioned before, I used the Linear Regression algorithm to build a prediction model to predict the future year where the city will be fully occupied with buildings.
-I have trained the prediction model with binary data of the converted GIS Maps of black and white for years 2004, 2008, 2010, 2013, and 2016 and tested the model with sample existing data to get accuracy of 90.6%, then used that model to predict the unknown year using the average binary data of the virtual GIS map of fully occupied spaces.
-The result of the prediction model on the above converted virtual map is approximately equal to 2400.
+I used the Linear Regression algorithm to build a model to predict the future year where the city will be fully occupied with buildings.
+I have trained the prediction model with binary data of the converted GIS Maps of black and white of years 2004, 2008, 2010, 2013, and 2016 and tested the model to get accuracy of 90.6%, then used that model to predict the unknown year using the average binary data of the virtual map of fully occupied spaces.
+The output result of the prediction is approximately equal to 2400.
 
 
 
