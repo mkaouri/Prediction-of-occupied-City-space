@@ -91,7 +91,43 @@ I used the Linear Regression algorithm to build a model to predict the future ye
 I have trained the prediction model with binary data of the converted GIS Maps of black and white of years 2004, 2008, 2010, 2013, and 2016 and tested the model to get accuracy of 90.6%, then used that model to predict the unknown year using the average binary data of the virtual map of fully occupied spaces.
 The output result of the prediction is approximately equal to 2400.
 
+```python
+import numpy as np
+import pandas as pd
+from pylab import *
+from sklearn.linear_model import LinearRegression
+from sklearn.svm import SVC
+from PIL import Image
+from PIL import * 
 
+image1 = Image.open('2004b.jpg') 
+image2 = Image.open('2008b.jpg') 
+image3 = Image.open('2010b.jpg') 
+image4 = Image.open('2013b.jpg') 
+image5 = Image.open('2016b.jpg') 
+    
+im_array1 = np.array(image1)
+im_array2 = np.array(image2)
+im_array3 = np.array(image3)
+im_array4 = np.array(image4)
+im_array5 = np.array(image5)
 
+image6 = Image.open('prediction_features.jpg')
+im_array6 = np.array(image6)
 
+X = [[mean(im_array1)], [mean(im_array2)], [mean(im_array3)], [mean(im_array4)], [mean(im_array5)]]
+y = [2004, 2008, 2010, 2013, 2016]  
 
+model = LinearRegression()
+model.fit(X, y)
+
+y_test = [2013]
+X_test = [[mean(im_array4)]]
+y_predict = model.predict(X_test)
+
+X_predict = [[mean(im_array6)]]
+y_predict = model.predict(X_predict)
+
+y_predict
+
+```
