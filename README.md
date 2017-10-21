@@ -37,7 +37,7 @@ Figure 5. Shows the GIS map of Al-Khiyam city, south of Lebanon, of year 2016 fr
 
 Now, to make the maps readable by the prediction analysis model, I had to convert it into black and white using a graphic designer tool. The black color is the area without buildings and public places and the white color is the area with buildings and public places. I only used in my analysis the border of Al-Khiyam Mountain from Al-Dardara Lake, west, to the east of the Mountain, excluding the area of the agriculture (Figure 6). 
 
-![Alt text](/images/2017.jpg?raw=true "Al-Khiyam city border")
+![Alt text](/images/2016.png?raw=true "Al-Khiyam city border")
 Figure 6. Shows Al-Khiyam city border that is considered in the prediction analysis.
 
 Below are the converted screenshots of the maps by considering only the specified border. (Figures 7-11)
