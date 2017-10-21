@@ -96,7 +96,6 @@ import numpy as np
 import pandas as pd
 from pylab import *
 from sklearn.linear_model import LinearRegression
-from sklearn.svm import SVC
 from PIL import Image
 from PIL import * 
 
